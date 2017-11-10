@@ -8,6 +8,8 @@ namespace apiScraper
         {
             Console.WriteLine("Hello World!");
             MqttPublisher publisher = new MqttPublisher();
+            WeatherRetriever weather = new WeatherRetriever();
+            Console.WriteLine(weather.fetchWeatherInfo("Rotterdam"));
         }
     }
 }
